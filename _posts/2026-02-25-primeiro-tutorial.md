@@ -1,6 +1,6 @@
 ---
 title: "Primeiro tutorial"
-date: 2026-03-14
+date: 2026-02-25
 ---
 
 Comecei o primeiro tutorial da disciplina animado para aprender mais sobre o funcionamento do kernel e sobre o uso de VM's para contribuir com o desenvolvimento do kernel.
