@@ -75,7 +75,7 @@ Mas, as coisas estavam um pouco confusas. Então, decidimos entender o papel dos
 
 ---
 
-## Solução Adotada (Refatoração)
+## Solução Adotada 
 
 Entendido isso, partimos para pensar em como fazer a refatoração para eliminar a duplicação de código. A ideia que tivemos foi: Como as funções `jpeg_v5_0_1_process_interrupt` e `jpeg_v5_0_2_process_interrupt` são iguais, então, podemos: 
 
@@ -90,7 +90,7 @@ Entendido isso, partimos para pensar em como fazer a refatoração para eliminar
 
 ---
 
-## Testando e Validando  
+## Testando a mudança 
 
 Implementamos isso e, para testar, encontramos um novo problema: 
 
