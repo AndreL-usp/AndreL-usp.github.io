@@ -149,7 +149,7 @@ int jpeg_v5_0_1_process_interrupt(struct amdgpu_device *adev,
 A função `amdgpu_fence_process()` permite que a aplicação de usuário entenda que a placa terminou de decodificar e que a aplicação pode pegar os dados decodificados em algum lugar especificado.
 
 
-## Voltando ao problema
+## Entendido o contexto, podemos voltar ao problema
 
 As funções:
 
