@@ -181,8 +181,6 @@ Solução proposta inicialmente (V1):
 4. Ao final, precisaríamos incluir o novo arquivo no `Makefile` para garantir que ele seja compilado junto com os outros arquivos da pasta.
 
 
-![Captura de tela do pipeline](/assets/Captura%20de%20tela%20de%202026-04-20%2023-32-13.png)
-
 
 ## Depois de três semanas sem feedback fizemos um resend e finalmente recebemos:
 
