@@ -198,7 +198,16 @@ Então, ele sugere descartar a ideia de criar um `jpeg_v5_0_interrupt.c/h` do qu
 
 Então, nosso patch final ficou assim:
 
-**Em** `jpeg_v5_0_1.c`, mudamos para não estático:
+**Em** `jpeg_v5_0_1.c`, oque era estático:
+
+```c
+static int jpeg_v5_0_1_process_interrupt(struct amdgpu_device *adev,
+				      struct amdgpu_irq_src *source,
+				      struct amdgpu_iv_entry *entry)
+```
+
+Mudamos para não estático:
+
 ```c
 int jpeg_v5_0_1_process_interrupt(struct amdgpu_device *adev,
                                   struct amdgpu_irq_src *source,
@@ -221,6 +230,8 @@ static const struct amdgpu_irq_src_funcs jpeg_v5_0_2_irq_funcs = {
 };
 ```
 
+(Que era onde a função jpeg_v5_0_2_process_interrupt era usada)
+
 **Por:**
 ```c
 static const struct amdgpu_irq_src_funcs jpeg_v5_0_2_irq_funcs = {
@@ -228,6 +239,8 @@ static const struct amdgpu_irq_src_funcs jpeg_v5_0_2_irq_funcs = {
     .process = jpeg_v5_0_1_process_interrupt
 };
 ```
+
+Além disso, retiramos o código referente a `jpeg_v5_0_2_process_interrupt`, eliminando, assim, a duplicação.
 
 Feitas as mudanças, mandamos nosso patch v2 para o pipeline da disciplina. Ele foi aceito e então enviamos para os mantenedores da AMDGPU.
 
