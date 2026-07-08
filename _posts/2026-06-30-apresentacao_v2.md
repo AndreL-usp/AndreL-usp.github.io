@@ -132,7 +132,3 @@ Basicamente, a ideia de apagar o diretório de cache e depois recriá-lo poderia
 Além disso, o fs::weakly_canonical() torna mais consistente o caminho, o que pode ser uma boa antes de modificar ele.
 
 Após esse comentário, o Guilherme fechou a issue e adicionou um commit com nossas modificações :)
-
-# Nova contribuição para o ArKanjo ?
-
-![a](/assets/g5.png)
