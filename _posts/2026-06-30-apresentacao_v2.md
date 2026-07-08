@@ -19,6 +19,8 @@ V2 Resend na mesma thread da V1 Resend
 Sem resposta
 ```
 
+Como ainda estamos sem resposta, foi sugerido pelos monitores de mandar a V2 numa thread diferente. Fizemos isso e estamos esperando se dessa vez teremos uma resposta.
+
 # Fase 2:
 
 ## Busca por uma contribuição
