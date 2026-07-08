@@ -27,6 +27,8 @@ Como ainda estamos sem resposta, foi sugerido pelos monitores de mandar a V2 num
 
 A busca foi muito simples: tivemos em aula a apresentação sobre o projeto do ArKanjo e nela o Guilherme Ivo, um dos mantenedores, apresentou algumas issues que inclusive já estavam descritas e categorizadas no repositório do github do projeto e, dentre elas, foi apresenta a issue #31 que pedia a adição da opção / flag --all no comando preprocessor clean.
 
+![cc](/assets/g6.png)
+
 A motivação é simples: O Arkanjo usa uma etapa de pre-processamento para acelerar consultas posteriores de duplicacao de codigo. Essa etapa cria um cache em disco que podemos querer limpar completamente por motivos de espaço etc.
 
 Por ser uma issue interessante, bem documentada, marcada como good first issue e com o mantenedor ao nosso alcance, decidimos atacá-la.
